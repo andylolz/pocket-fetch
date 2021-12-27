@@ -1,0 +1,4 @@
+pycketcasts
+python-dotenv
+python-slugify
+requests
