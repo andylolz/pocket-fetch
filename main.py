@@ -1,6 +1,7 @@
 from os import makedirs, getenv
 from os.path import exists
 from pathlib import Path
+import urllib3
 
 from dotenv import load_dotenv
 from pycketcasts import PocketCast
@@ -8,6 +9,7 @@ from slugify import slugify
 import requests
 
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 OUTPUT_PATH = Path('./output')
 load_dotenv()
 
